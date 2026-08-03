@@ -30,6 +30,17 @@ const SuggestSong = () => {
             justifyContent: "center",
           }}
         >
+          <Box
+            component="img"
+            src="/images/song.gif"
+            alt="Cancion"
+            sx={{
+              width: 125,
+              height: 125,
+              mb: 1,
+            }}
+          />
+
           <Typography
             variant="h4"
             sx={{

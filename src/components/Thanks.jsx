@@ -3,7 +3,7 @@ import { Box, useMediaQuery, useTheme } from "@mui/material";
 const Thanks = () => {
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
-  const thanksImage = "/images/demo10/gracias.png";
+  const thanksImage = "/images/gracias.jpeg";
 
   return (
     <Box

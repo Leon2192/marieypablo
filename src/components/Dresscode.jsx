@@ -40,6 +40,17 @@ const Dresscode = () => {
             transition: "transform 0.6s ease-out",
           }}
         >
+          <Box
+            component="img"
+            src="/images/dresscode.gif"
+            alt="Dresscode"
+            sx={{
+              width: 125,
+              height: 125,
+              mb: 1,
+            }}
+          />
+
           <Typography
             variant="h4"
             sx={{
