@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320" role="img" aria-labelledby="title desc">
+  <title id="title">QR Placeholder</title>
+  <desc id="desc">Placeholder QR style graphic to be replaced later.</desc>
+  <rect width="320" height="320" fill="#ffffff"/>
+  <rect x="20" y="20" width="280" height="280" rx="16" fill="#ffffff" stroke="#111111" stroke-width="10"/>
+  <rect x="40" y="40" width="72" height="72" fill="#111111"/>
+  <rect x="56" y="56" width="40" height="40" fill="#ffffff"/>
+  <rect x="208" y="40" width="72" height="72" fill="#111111"/>
+  <rect x="224" y="56" width="40" height="40" fill="#ffffff"/>
+  <rect x="40" y="208" width="72" height="72" fill="#111111"/>
+  <rect x="56" y="224" width="40" height="40" fill="#ffffff"/>
+  <rect x="144" y="48" width="16" height="16" fill="#111111"/>
+  <rect x="160" y="64" width="16" height="16" fill="#111111"/>
+  <rect x="144" y="80" width="16" height="16" fill="#111111"/>
+  <rect x="128" y="96" width="16" height="16" fill="#111111"/>
+  <rect x="144" y="112" width="16" height="16" fill="#111111"/>
+  <rect x="176" y="128" width="16" height="16" fill="#111111"/>
+  <rect x="192" y="144" width="16" height="16" fill="#111111"/>
+  <rect x="176" y="160" width="16" height="16" fill="#111111"/>
+  <rect x="160" y="176" width="16" height="16" fill="#111111"/>
+  <rect x="144" y="192" width="16" height="16" fill="#111111"/>
+  <rect x="128" y="144" width="16" height="16" fill="#111111"/>
+  <rect x="112" y="160" width="16" height="16" fill="#111111"/>
+  <rect x="96" y="144" width="16" height="16" fill="#111111"/>
+  <rect x="208" y="128" width="16" height="16" fill="#111111"/>
+  <rect x="224" y="144" width="16" height="16" fill="#111111"/>
+  <rect x="240" y="160" width="16" height="16" fill="#111111"/>
+  <rect x="224" y="176" width="16" height="16" fill="#111111"/>
+  <rect x="208" y="192" width="16" height="16" fill="#111111"/>
+  <rect x="192" y="208" width="16" height="16" fill="#111111"/>
+  <rect x="176" y="224" width="16" height="16" fill="#111111"/>
+  <rect x="160" y="240" width="16" height="16" fill="#111111"/>
+  <rect x="144" y="224" width="16" height="16" fill="#111111"/>
+  <rect x="128" y="208" width="16" height="16" fill="#111111"/>
+</svg>
