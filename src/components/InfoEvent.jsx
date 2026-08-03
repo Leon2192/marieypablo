@@ -23,26 +23,31 @@ const InfoEvent = () => {
         backgroundColor: "#ffffff",
         display: "flex",
         justifyContent: "center",
+        alignItems: "center",
       }}
     >
-      <Box
-        sx={{
-          textAlign: "center",
-          maxWidth: 520,
-          width: "100%",
-        }}
-      >
-        <Slide in={inView} direction="up" timeout={800}>
-          <Box>
+      <Slide in={inView} direction="up" timeout={800}>
+        <Box
+          sx={{
+            width: "100%",
+            maxWidth: { xs: 340, sm: 420, md: 520 },
+            mx: "auto",
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+            justifyContent: "center",
+            textAlign: "center",
+          }}
+        >
             <Typography
               variant="h4"
               sx={{
                 fontFamily: "var(--font-secondary)",
-                fontSize: { xs: "2.3rem", md: "2.8rem" },
+                fontSize: { xs: "2.1rem", md: "2.8rem" },
                 color: "#000000",
-                whiteSpace: "nowrap",
-                display: "inline-block",
+                textAlign: "center",
                 mb: 2,
+                width: "100%",
               }}
             >
               Ceremonia & Fiesta
@@ -56,6 +61,7 @@ const InfoEvent = () => {
                 color: "#000000",
                 fontWeight: "bold",
                 lineHeight: 1.4,
+                width: "100%",
               }}
             >
               Domingo 6 de diciembre de 2026
@@ -69,6 +75,7 @@ const InfoEvent = () => {
                 color: "#000000",
                 fontWeight: "bold",
                 lineHeight: 1.4,
+                width: "100%",
               }}
             >
               12:00 hs
@@ -82,6 +89,7 @@ const InfoEvent = () => {
                 color: "#000000",
                 fontWeight: "bold",
                 lineHeight: 1.4,
+                width: "100%",
               }}
             >
               {direccionLinea1}
@@ -103,15 +111,14 @@ const InfoEvent = () => {
                 fontFamily: "var(--font-primary)",
                 fontWeight: "bold",
                 "&:hover": {
-                backgroundColor: "#333333",
+                  backgroundColor: "#333333",
                 },
               }}
             >
               CÓMO LLEGAR
             </Button>
-          </Box>
-        </Slide>
-      </Box>
+        </Box>
+      </Slide>
     </Box>
   );
 };
