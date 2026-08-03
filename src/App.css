@@ -7,8 +7,8 @@ html, body, #root {
 }
 
 :root {
-  --font-primary: "Tiffany", "Luxurious Script", cursive;
-  --font-secondary: "Quicksand", sans-serif;
+  --font-primary: "Quicksand", sans-serif;
+  --font-secondary: "Tiffany", "Luxurious Script", cursive;
 }
 
 body {
