@@ -50,7 +50,7 @@ const Dresscode = () => {
               mb: 2,
             }}
           >
-            Elegante Sport
+            Dresscode
           </Typography>
 
           <Box sx={{ mb: 4 }} />
@@ -102,7 +102,7 @@ const Dresscode = () => {
                 color: "#000000",
               }}
             >
-              Elegante/Formal
+              Elegante Sport
             </Typography>
           </Box>
         </Fade>
