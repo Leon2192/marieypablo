@@ -8,15 +8,10 @@ const Thanks = () => {
   return (
     <Box
       sx={{
-        position: "relative",
         height: "50vh",
         m: 0,
-        p: 0,
+        p: { xs: 2, sm: 3, md: 4 },
         backgroundColor: "#ffffff",
-        backgroundImage: `url(${thanksImage})`,
-        backgroundSize: isMobile ? "cover" : "contain",
-        backgroundPosition: "center",
-        backgroundRepeat: "no-repeat",
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
@@ -24,7 +19,16 @@ const Thanks = () => {
         overflow: "hidden",
       }}
     >
-      <Box />
+      <Box
+        sx={{
+          width: "100%",
+          height: "100%",
+          backgroundImage: `url(${thanksImage})`,
+          backgroundSize: isMobile ? "contain" : "contain",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
+        }}
+      />
     </Box>
   );
 };
