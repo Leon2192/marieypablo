@@ -158,7 +158,7 @@ const Gift = () => {
                 fontWeight: 600,
               }}
             >
-              Alias: boda.MYP
+              Alias: bodamarieypablo
               {/* <br />
               CBU: 000000000000000
               <br />
