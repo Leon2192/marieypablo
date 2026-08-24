@@ -63,7 +63,7 @@ const Countdown = () => {
           <Box>
             <Typography
               sx={{
-                fontSize: { xs: "2.5rem", md: "3.1rem" },
+                fontSize: { xs: "1.7rem", md: "2.1rem" },
                 ...sectionTitleSx,
                 fontWeight: 500,
                 mb: 1,

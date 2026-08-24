@@ -50,7 +50,7 @@ const SuggestSong = () => {
             variant="h4"
             sx={{
               ...sectionTitleSx,
-              fontSize: { xs: "1.8rem", md: "2.3rem" },
+              fontSize: { xs: "1.7rem", md: "2.1rem" },
               color: "#000000",
               mb: 1,
             }}

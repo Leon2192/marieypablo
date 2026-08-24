@@ -60,7 +60,7 @@ const Dresscode = () => {
             variant="h4"
             sx={{
               ...sectionTitleSx,
-              fontSize: { xs: "1.8rem", md: "2.3rem" },
+              fontSize: { xs: "1.7rem", md: "2.1rem" },
               color: "#000000",
               fontWeight: "semibold",
               mb: 2,
@@ -114,7 +114,7 @@ const Dresscode = () => {
               variant="body1"
               sx={{
                 ...sectionTitleSx,
-                fontSize: { xs: "1.6rem", md: "1.9rem" },
+                fontSize: { xs: "1.7rem", md: "2.1rem" },
                 color: "#000000",
               }}
             >

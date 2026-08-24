@@ -139,7 +139,7 @@ const Gift = () => {
               gutterBottom
               sx={{
                 ...sectionTitleSx,
-                fontSize: { xs: "1.9rem", md: "2.6rem" },
+                fontSize: { xs: "1.7rem", md: "2.1rem" },
                 color: "#000000",
                 mb: 1,
               }}
