@@ -9,6 +9,11 @@ html, body, #root {
 :root {
   --font-primary: "Quicksand", sans-serif;
   --font-secondary: "Brittany", "Luxurious Script", cursive;
+  --font-title: "Prata", "LibraSerifModern", serif;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {

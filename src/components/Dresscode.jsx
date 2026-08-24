@@ -10,6 +10,8 @@ import CloseIcon from "@mui/icons-material/Close";
 import { useInView } from "react-intersection-observer";
 import { useState } from "react";
 import ButtonLinks from "./ButtonLinks/ButtonLInks";
+import SectionArrow from "./SectionArrow";
+import { sectionTitleSx } from "./sectionStyles";
 
 const Dresscode = () => {
   const [open, setOpen] = useState(false);
@@ -21,9 +23,12 @@ const Dresscode = () => {
   return (
     <Box
       ref={ref}
+      id="dresscode"
       sx={{
         minHeight: "40vh",
-        py: 8,
+        position: "relative",
+        pt: 8,
+        pb: 12,
         px: 2,
         backgroundColor: "#ffffff",
         display: "flex",
@@ -54,8 +59,8 @@ const Dresscode = () => {
           <Typography
             variant="h4"
             sx={{
-              fontFamily: "var(--font-secondary)",
-              fontSize: { xs: "2.2rem", md: "3rem" },
+              ...sectionTitleSx,
+              fontSize: { xs: "1.8rem", md: "2.3rem" },
               color: "#000000",
               fontWeight: "semibold",
               mb: 2,
@@ -108,8 +113,8 @@ const Dresscode = () => {
             <Typography
               variant="body1"
               sx={{
-                fontFamily: "var(--font-secondary)",
-                fontSize: { xs: "2rem", md: "2.5rem" },
+                ...sectionTitleSx,
+                fontSize: { xs: "1.6rem", md: "1.9rem" },
                 color: "#000000",
               }}
             >
@@ -118,6 +123,8 @@ const Dresscode = () => {
           </Box>
         </Fade>
       </Modal>
+
+      <SectionArrow href="#confirm" />
     </Box>
   );
 };

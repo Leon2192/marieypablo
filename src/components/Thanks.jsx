@@ -7,6 +7,7 @@ const Thanks = () => {
 
   return (
     <Box
+      id="thanks"
       sx={{
         height: "50vh",
         m: 0,

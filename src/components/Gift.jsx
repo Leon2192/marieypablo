@@ -10,6 +10,8 @@ import CloseIcon from "@mui/icons-material/Close";
 import { useState } from "react";
 import { useInView } from "react-intersection-observer";
 import ButtonLinks from "./ButtonLinks/ButtonLInks";
+import SectionArrow from "./SectionArrow";
+import { sectionTitleSx } from "./sectionStyles";
 
 const Gift = () => {
   const [open, setOpen] = useState(false);
@@ -24,8 +26,11 @@ const Gift = () => {
   return (
     <Box
       ref={ref}
+      id="gift"
       sx={{
-        py: 8,
+        position: "relative",
+        pt: 8,
+        pb: 12,
         px: 2,
         display: "flex",
         flexDirection: "column",
@@ -133,8 +138,8 @@ const Gift = () => {
               fontWeight="bold"
               gutterBottom
               sx={{
-                fontFamily: "var(--font-secondary)",
-                fontSize: { xs: "2.5rem", md: "3.5rem" },
+                ...sectionTitleSx,
+                fontSize: { xs: "1.9rem", md: "2.6rem" },
                 color: "#000000",
                 mb: 1,
               }}
@@ -162,6 +167,8 @@ const Gift = () => {
           </Box>
         </Fade>
       </Modal>
+
+      <SectionArrow href="#qr" />
     </Box>
   );
 };

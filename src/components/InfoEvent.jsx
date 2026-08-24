@@ -1,5 +1,7 @@
 import { Box, Typography, Fade, Button } from "@mui/material";
 import { useInView } from "react-intersection-observer";
+import SectionArrow from "./SectionArrow";
+import { sectionTitleSx } from "./sectionStyles";
 
 const InfoEvent = () => {
   const { ref, inView } = useInView({
@@ -16,8 +18,11 @@ const InfoEvent = () => {
   return (
     <Box
       ref={ref}
+      id="info"
       sx={{
-        py: 8,
+        position: "relative",
+        pt: 8,
+        pb: 12,
         px: 2,
         backgroundColor: "#ffffff",
         display: "flex",
@@ -42,8 +47,8 @@ const InfoEvent = () => {
           <Typography
             variant="h4"
             sx={{
-              fontFamily: "var(--font-secondary)",
-              fontSize: { xs: "2.1rem", md: "2.8rem" },
+              ...sectionTitleSx,
+              fontSize: { xs: "1.7rem", md: "2.1rem" },
               color: "#000000",
               mb: 2,
             }}
@@ -115,6 +120,8 @@ const InfoEvent = () => {
           </Button>
         </Box>
       </Fade>
+
+      <SectionArrow href="#gift" />
     </Box>
   );
 };

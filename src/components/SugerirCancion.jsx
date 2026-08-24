@@ -1,5 +1,7 @@
 import { Box, Typography, Button, Fade } from "@mui/material";
 import { useInView } from "react-intersection-observer";
+import SectionArrow from "./SectionArrow";
+import { sectionTitleSx } from "./sectionStyles";
 
 const SuggestSong = () => {
   const { ref, inView } = useInView({
@@ -10,9 +12,12 @@ const SuggestSong = () => {
   return (
     <Box
       ref={ref}
+      id="song"
       sx={{
         minHeight: "40vh",
-        py: 8,
+        position: "relative",
+        pt: 8,
+        pb: 12,
         px: 2,
         backgroundColor: "#ffffff",
         display: "flex",
@@ -44,8 +49,8 @@ const SuggestSong = () => {
           <Typography
             variant="h4"
             sx={{
-              fontFamily: "var(--font-secondary)",
-              fontSize: { xs: "2.2rem", md: "3rem" },
+              ...sectionTitleSx,
+              fontSize: { xs: "1.8rem", md: "2.3rem" },
               color: "#000000",
               mb: 1,
             }}
@@ -103,6 +108,8 @@ const SuggestSong = () => {
 
         </Box>
       </Fade>
+
+      <SectionArrow href="#dresscode" />
     </Box>
   );
 };

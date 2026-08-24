@@ -1,6 +1,8 @@
 import { Box, Typography, Grid, Slide, Fade } from "@mui/material";
 import { useEffect, useState } from "react";
 import { useInView } from "react-intersection-observer";
+import SectionArrow from "../SectionArrow";
+import { sectionTitleSx } from "../sectionStyles";
 
 const targetDate = new Date("2026-12-06T12:00:00");
 
@@ -38,10 +40,12 @@ const Countdown = () => {
   return (
     <Box
       ref={ref}
-      id="info"
+      id="countdown"
       sx={{
         minHeight: "30vh",
-        py: 6,
+        position: "relative",
+        pt: 6,
+        pb: 10,
         px: 2,
         display: "flex",
         justifyContent: "center",
@@ -59,8 +63,8 @@ const Countdown = () => {
           <Box>
             <Typography
               sx={{
-                fontSize: { xs: "3.2rem", md: "4rem" },
-                fontFamily: "var(--font-secondary)",
+                fontSize: { xs: "2.5rem", md: "3.1rem" },
+                ...sectionTitleSx,
                 fontWeight: 500,
                 mb: 1,
                 color: "#000000",
@@ -102,6 +106,8 @@ const Countdown = () => {
           </Grid>
         </Fade>
       </Box>
+
+      <SectionArrow href="#info" />
     </Box>
   );
 };

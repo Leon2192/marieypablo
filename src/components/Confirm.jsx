@@ -1,12 +1,17 @@
 import { Box, Typography } from "@mui/material";
 import ButtonLinks from "./ButtonLinks/ButtonLInks";
+import SectionArrow from "./SectionArrow";
+import { sectionTitleSx } from "./sectionStyles";
 
 const Confirm = () => {
   return (
     <Box
+      id="confirm"
       sx={{
         minHeight: "40vh",
-        py: 8,
+        position: "relative",
+        pt: 8,
+        pb: 12,
         px: 2,
         backgroundColor: "#ffffff",
         display: "flex",
@@ -34,8 +39,8 @@ const Confirm = () => {
         <Typography
           variant="h4"
           sx={{
-            fontFamily: "var(--font-secondary)",
-            fontSize: { xs: "2.5rem", md: "3.5rem" },
+            ...sectionTitleSx,
+            fontSize: { xs: "1.9rem", md: "2.6rem" },
             color: "#000000",
             fontWeight: "semibold",
             mb: 2,
@@ -64,6 +69,8 @@ const Confirm = () => {
           newTab
         />
       </Box>
+
+      <SectionArrow href="#thanks" />
     </Box>
   );
 };
